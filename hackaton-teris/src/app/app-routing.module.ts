@@ -4,7 +4,7 @@ import { ProjetoPageComponent } from './components/projeto-page/projeto-page.com
 
 
 const routes: Routes = [
-  { path: ' ', component: ProjetoPageComponent }
+  { path: '', component: ProjetoPageComponent }
 ];
 
 @NgModule({
