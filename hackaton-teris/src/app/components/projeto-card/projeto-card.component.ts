@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ServicesModel } from '../../crud/services/services-api.service';
+/*import { ServiceModel } from '../../crud/services/services-api.service';*/
 
 @Component({
   selector: 'app-projeto-card',
