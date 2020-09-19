@@ -5,7 +5,12 @@ img {
   padding: 2px;
   margin-top: 10px;
 }
-
+.imagem{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 h1 {
   background-color: #033a68;
   border: solid 4px #f6f2f2;
