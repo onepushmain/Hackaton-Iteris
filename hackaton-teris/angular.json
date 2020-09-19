@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "hackaton-teris"
+    }
+  },
+  "defaultProject": "hackaton-teris",
+  "cli": {
+    "analytics": "31a0d039-b119-4be6-ab41-f35f74c8f68d"
+  }
 }
