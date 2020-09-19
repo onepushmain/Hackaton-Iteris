@@ -34,43 +34,43 @@ export class ProjetoCardComponent implements OnInit {
     }
     for (let i = 0; i <= this.item.tags.length; i++) {
       if(this.tags[i] == 'Mobilidade Urbana'){
-        console.log("entrei aqui if 1");
+        //console.log("entrei aqui if 1");
 
         this.gastos += 10;
         this.prioridade = this.prioridade + 15;
       }
 
       if(this.tags[i] == 'Acessibilidade'){
-        console.log("entrei aqui if 2");
+        //console.log("entrei aqui if 2");
         this.gastos += 10;
         this.prioridade += 20;
       }
 
       if(this.tags[i] == 'Saúde'){
-        console.log("entrei aqui if 3");
+        //console.log("entrei aqui if 3");
         this.gastos += 60;
         this.prioridade += 60;
       }
 
       if(this.tags[i] == 'Saneamento Básico'){
-        console.log("entrei aqui if 4");
+        //console.log("entrei aqui if 4");
         this.gastos += 50;
         this.prioridade += 25;
       }
 
       if(this.tags[i] == 'Educação'){
-        console.log("entrei aqui if 5");
+        //console.log("entrei aqui if 5");
         this.gastos += 60;
         this.prioridade += 30;
       }
 
       if(this.tags[i] == 'Lazer'){
-        console.log("entrei aqui if 6");
+        //console.log("entrei aqui if 6");
         this.gastos += 20;
         this.prioridade += 10;
       }
     }
     //console.log(this.item.tags[0]
-    console.log(this.prioridade);
+    //console.log(this.prioridade);
   }
 }

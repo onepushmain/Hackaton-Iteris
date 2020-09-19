@@ -1,9 +1,50 @@
-.warning{
-  color: red;
+img {
+  background-color: #2D4B84;
+  max-width: 100%;
+  border: solid 2px #000000;
+  padding: 2px;
+  margin-top: 10px;
 }
-.checkbox{
-  color: green;
+
+h1 {
+  background-color: #033a68;
+  border: solid 4px #f6f2f2;
+  padding: 4px;
+  margin-top: 10px;
+  height: 12vh;
+  width: 92vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  font-style: oblique;
+  font-size: 35px;
+  color: #ffffffd0;
+  border: solid 2px #0000009a;
+  padding: 2px;
+  margin-top: 10px;
 }
-.loading{
-  color: yellow;
+
+mat-expansion-panel-header {
+  font-style: oblique;
+  font-size: 12px;
+  color: #888585d0;
+}
+
+mat-panel-description {
+  font-style: oblique;
+  font-size: 12px;
+  color: #777373d0;
+}
+
+mat-panel-title {
+  font-style: oblique;
+  font-size: 12px;
+  color: #777373d0;
+}
+
+mat-panel-description {
+  font-style: oblique;
+  font-size: 12px;
+  color: #777373d0;
 }
