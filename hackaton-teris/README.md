@@ -1,6 +1,8 @@
 # HackatonTeris
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.1.
+Projeto  do grupo 8 com integrantes Daniella Thomas, Vinicus Rocha, Thomas Jefferson e Luiz Fernando.
+Projeto sobre uma pagina que mostra em ordem de urgencia as principais ocorrencias da região para politicos (onde a população tambem pode acessar). 
 
 ## Development server
 
