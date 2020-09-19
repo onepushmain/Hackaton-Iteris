@@ -10,18 +10,21 @@
   <p>Prioridade.</p>
   <mat-progress-bar mode="determinate" value={{prioridade}}></mat-progress-bar><br>
   <mat-accordion>
-    <mat-expansion-panel hideToggle>
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          {{address}}
-        </mat-panel-title>
-          <mat-panel-description>
-            Mais informações
-          </mat-panel-description>
+    <mat-accordion>
+      <mat-expansion-panel hideToggle>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            {{name}}
+          </mat-panel-title>
           <mat-panel-title>
             {{tags}}
           </mat-panel-title>
-      </mat-expansion-panel-header>
-    </mat-expansion-panel>
-  </mat-accordion>
+          <mat-panel-title>
+            Detalhes
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p>{{description}}</p>
+        <p>{{address}}</p>
+      </mat-expansion-panel>
+    </mat-accordion>
 
