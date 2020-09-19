@@ -9,7 +9,7 @@ export class CrudService {
 
   constructor(private http:HttpClient) { }
 
-  public Lista(): Observable<Modelo[]>{
-    return this.http.get<Modelo[]>('https://it3yui.firebaseio.com/problemas.json')
+  public Lista(): Observable<any>{
+    return this.http.get<any>('https://it3yui.firebaseio.com/problemas.json')
   }
 }

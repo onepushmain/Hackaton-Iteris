@@ -19,5 +19,5 @@ export class ProjetoPageComponent implements OnInit {
     }))
   };
   */
-
+ }
 }

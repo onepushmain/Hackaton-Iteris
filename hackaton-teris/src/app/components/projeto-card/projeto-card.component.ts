@@ -21,7 +21,7 @@ export class ProjetoCardComponent implements OnInit {
   */
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(): void { }
 
     /*
     if (this.lista != null) {
@@ -33,5 +33,4 @@ export class ProjetoCardComponent implements OnInit {
     }
   }
   */
-
 }
