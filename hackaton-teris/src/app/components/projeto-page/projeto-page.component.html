@@ -1,2 +1,2 @@
-<app-projeto-card></app-projeto-card>
+<app-projeto-card *ngFor="let item of lista" [item]="item"></app-projeto-card>
 <router-outlet></router-outlet>

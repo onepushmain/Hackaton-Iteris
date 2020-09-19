@@ -32,6 +32,7 @@ export class ProjetoCardComponent implements OnInit {
       this.photo = this.item.photo;
       this.tags = this.item.tags;
     }
+    console.log(this.item);
   }
    /*
     for(let i: number = 0;i<= this.tags[i].length,i++){
