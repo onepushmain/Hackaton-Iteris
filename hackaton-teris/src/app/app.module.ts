@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProjetoCardComponent } from './components/projeto-card/projeto-card.component';
+import { ProjetoPageComponent } from './components/projeto-page/projeto-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProjetoCardComponent
+    ProjetoCardComponent,
+    ProjetoPageComponent
   ],
   imports: [
     BrowserModule,
