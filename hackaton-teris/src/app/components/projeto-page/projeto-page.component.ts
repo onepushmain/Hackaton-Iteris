@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CrudService } from 'src/app/crud/crud.service';
 
 @Component({
   selector: 'app-projeto-page',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjetoPageComponent implements OnInit {
 
-  constructor() { }
+  /*lista: Modelo[];*/
+
+  constructor(private politicaAPI: CrudService) { }
 
   ngOnInit(): void {
-  }
+    /*
+    this.politicaAPI.get().subscribe((lista => {
+      this.lista = lista;
+    }))
+  };
+  */
 
 }
