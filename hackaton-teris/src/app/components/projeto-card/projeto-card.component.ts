@@ -10,15 +10,13 @@ export class ProjetoCardComponent implements OnInit {
 
   /*
   @Input() lista: CrudService;
-
-
-  address : string;
-  description: string;
-  name: string;
-  photo: string;
-  tags: string[];
-
   */
+
+  address: string = 'Rua qualquer';
+  description: string = 'Problema qualquer';
+  name: string = 'Nome qualquer';
+  photo: string = 'https://plamurbblog.files.wordpress.com/2019/06/408347-mais-buraco-do-que-rua-2-2-800x519.jpg?w=616';
+  tags: string[] = ['Mobilidade Urbana', 'Acessibilidade'];
 
   gastos: number;
   prioridade: number;
