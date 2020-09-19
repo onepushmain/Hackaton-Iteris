@@ -71,6 +71,6 @@ export class ProjetoCardComponent implements OnInit {
       }
     }
     //console.log(this.item.tags[0]
-    //console.log(this.prioridade);
+    console.log(this.prioridade);
   }
 }

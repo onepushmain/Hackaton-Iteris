@@ -10,12 +10,13 @@ import { ServicesModel } from 'src/app/Model/services-model';
 export class ProjetoPageComponent implements OnInit {
 
   lista: ServicesModel[];
-
+  prioridade = 0;
   constructor(private politicosApi: ServicesApiService) { }
 
   ngOnInit(): void {
      this.politicosApi.List().subscribe(lista => {
       this.lista = lista;
+
       //console.log(this.lista);
      });
   }

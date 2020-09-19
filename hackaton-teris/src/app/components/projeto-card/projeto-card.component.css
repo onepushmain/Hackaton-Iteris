@@ -1,3 +1,6 @@
+body{
+  background-color: grey;
+}
 img {
   background-color: #2D4B84;
   max-width: 100%;
@@ -10,6 +13,14 @@ img {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  width: 500px;
+  margin-bottom: 5%;
 }
 h1 {
   background-color: #033a68;
@@ -28,6 +39,7 @@ h1 {
   border: solid 2px #0000009a;
   padding: 2px;
   margin-top: 10px;
+  max-width: 100%;
 }
 
 mat-expansion-panel-header {
