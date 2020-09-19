@@ -19,7 +19,7 @@ export class ProjetoPageComponent implements OnInit {
 
   ngOnInit(): void {
      this.politicosApi.List().subscribe((lista) => {
-      this.listaProblemas
+      this.listaProblemas = lista;
     /*
     this.politicaAPI.get().subscribe((lista => {
       this.lista = lista;
