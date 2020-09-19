@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ServicesApiService } from 'src/app/crud/services/services-api.service';
-import { ServicesModel } from 'src/app/crud/services/services-model';
+import { ServicesModel } from 'src/app/Model/services-model';
 
 @Component({
   selector: 'app-projeto-page',
@@ -16,7 +16,7 @@ export class ProjetoPageComponent implements OnInit {
   ngOnInit(): void {
      this.politicosApi.List().subscribe(lista => {
       this.lista = lista;
-      console.log(this.lista);
+      //console.log(this.lista);
      });
   }
 }

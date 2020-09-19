@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ServicesModel } from '../../crud/services/services-api.service';
+import { ServicesModel } from '../../Model/services-model';
+
 
 @Component({
   selector: 'app-projeto-card',
@@ -8,32 +9,30 @@ import { ServicesModel } from '../../crud/services/services-api.service';
 })
 export class ProjetoCardComponent implements OnInit {
 
-  /*
-  @Input() item: CrudService;
-  */
 
-  address: string = 'Rua qualquer';
-  description: string = 'Problema qualquer';
-  name: string = 'Nome qualquer';
-  photo: string = 'https://plamurbblog.files.wordpress.com/2019/06/408347-mais-buraco-do-que-rua-2-2-800x519.jpg?w=616';
-  tags: string[] = ['Mobilidade Urbana', 'Acessibilidade'];
+  @Input() item: ServicesModel;
+
+  address: string;
+  description: string;
+  name: string;
+  photo: string;
+  tags: string[];
 
   gastos: number;
   prioridade: number;
 
   constructor() { }
 
-  ngOnInit(): void { }
+  ngOnInit(): void {
 
-    /*
-    if (this.lista != null) {
-      this.address = this.lista.address;
-      this.description = this.lista.description;
-      this.name = this.lista.name;
-      this.photo = this.lista.photo;
-      this.tags = this.lista.tags;
+    if (this.item != null) {
+      this.address = this.item.address;
+      this.description = this.item.description;
+      this.name = this.item.name;
+      this.photo = this.item.photo;
+      this.tags = this.item.tags;
     }
-    */
+  }
    /*
     for(let i: number = 0;i<= this.tags[i].length,i++){
       if(this.tag[i] == "Mobilidade Urbana"){
