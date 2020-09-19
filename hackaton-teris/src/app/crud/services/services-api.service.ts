@@ -1,4 +1,7 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
+import { ServicesModel } from './services-model';
 
 @Injectable({
   providedIn: 'root'
@@ -7,17 +10,9 @@ import { Injectable } from '@angular/core';
 export class ServicesApiService {
 
 
-  constructor(private http:HttpClient) { }
-
-  export class PoliticosApiService {
-
-    constructor(private httpClient : HttpClient) {
-
-      public List (): Observable<PoliticoModel>{
-        return this.httpClient.get<PoliticoModel[]>('https://it3yui.firebaseio.com/problemas.json');
-      }
-     }
-
-
+  constructor(private http: HttpClient) { }
+    public List(): Observable<ServicesModel[]>{
+       return this.http.get<ServicesModel[]>('https://it3yui.firebaseio.com/problemas.json');
+  }
 
 }

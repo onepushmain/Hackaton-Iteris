@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { CrudService } from 'src/app/crud/crud.service';
+import { ServicesModel } from '../../crud/services/services-api.service';
 
 @Component({
   selector: 'app-projeto-card',
@@ -9,7 +9,7 @@ import { CrudService } from 'src/app/crud/crud.service';
 export class ProjetoCardComponent implements OnInit {
 
   /*
-  @Input() lista: CrudService;
+  @Input() item: CrudService;
   */
 
   address: string = 'Rua qualquer';
@@ -20,8 +20,6 @@ export class ProjetoCardComponent implements OnInit {
 
   gastos: number;
   prioridade: number;
-
-
 
   constructor() { }
 
@@ -35,13 +33,16 @@ export class ProjetoCardComponent implements OnInit {
       this.photo = this.lista.photo;
       this.tags = this.lista.tags;
     }
-    for(i=0;i<= this.tags[i].length,i++){
+    */
+   /*
+    for(let i: number = 0;i<= this.tags[i].length,i++){
       if(this.tag[i] == "Mobilidade Urbana"){
-        this.gastos+= (algumvalor);
-        this.prioridade+= (algumvalor);
+        this.gastos+= 10;
+        this.prioridade+= 20;
       }
+
       else if(this.tag[i] == "Acessibilidade"){
-        this.gastos+= (algumvalor);
+        this.gastos+= 10;
         this.prioridade+= (algumvalor);
       }
       else if(this.tag[i] == "Saúde"){
@@ -61,7 +62,6 @@ export class ProjetoCardComponent implements OnInit {
         this.prioridade+= (algumvalor);
       }
     }
-
   }
   */
 }
