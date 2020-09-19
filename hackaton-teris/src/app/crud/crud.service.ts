@@ -9,7 +9,15 @@ export class CrudService {
 
   constructor(private http:HttpClient) { }
 
-  public Lista(): Observable<any>{
-    return this.http.get<any>('https://it3yui.firebaseio.com/problemas.json')
+  export class PoliticosApiService {
+
+    constructor(private httpClient : HttpClient) {
+
+      public List (): Observable<PoliticoModel>{
+        return this.httpClient.get<PoliticoModel[]>('https://it3yui.firebaseio.com/problemas.json');
+      }
+     }
+  }
+
   }
 }
