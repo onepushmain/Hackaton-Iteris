@@ -19,7 +19,7 @@ export class ProjetoCardComponent implements OnInit {
   tags: string[];
 
   gastos: number;
-  prioridade: number;
+  prioridade = 0;
 
   constructor() { }
 
@@ -32,36 +32,45 @@ export class ProjetoCardComponent implements OnInit {
       this.photo = this.item.photo;
       this.tags = this.item.tags;
     }
-    console.log(this.item);
-  }
-   /*
-    for(let i: number = 0;i<= this.tags[i].length,i++){
-      if(this.tag[i] == "Mobilidade Urbana"){
-        this.gastos+= 10;
-        this.prioridade+= 20;
+    for (let i = 0; i <= this.item.tags.length; i++) {
+      if(this.tags[i] == 'Mobilidade Urbana'){
+        console.log("entrei aqui if 1");
+
+        this.gastos += 10;
+        this.prioridade = this.prioridade + 15;
       }
 
-      else if(this.tag[i] == "Acessibilidade"){
-        this.gastos+= 10;
-        this.prioridade+= (algumvalor);
+      if(this.tags[i] == 'Acessibilidade'){
+        console.log("entrei aqui if 2");
+        this.gastos += 10;
+        this.prioridade += 20;
       }
-      else if(this.tag[i] == "Saúde"){
-        this.gastos+= (algumvalor);
-        this.prioridade+= (algumvalor);
+
+      if(this.tags[i] == 'Saúde'){
+        console.log("entrei aqui if 3");
+        this.gastos += 60;
+        this.prioridade += 60;
       }
-      else if(this.tag[i] == "Saneamento Básico"){
-        this.gastos+= (algumvalor);
-        this.prioridade+= (algumvalor);
+
+      if(this.tags[i] == 'Saneamento Básico'){
+        console.log("entrei aqui if 4");
+        this.gastos += 50;
+        this.prioridade += 25;
       }
-      else if(this.tag[i] == "Educação"){
-        this.gastos+= (algumvalor);
-        this.prioridade+= (algumvalor);
+
+      if(this.tags[i] == 'Educação'){
+        console.log("entrei aqui if 5");
+        this.gastos += 60;
+        this.prioridade += 30;
       }
-      else if(this.tag[i] == "Lazer"){
-        this.gastos+= (algumvalor);
-        this.prioridade+= (algumvalor);
+
+      if(this.tags[i] == 'Lazer'){
+        console.log("entrei aqui if 6");
+        this.gastos += 20;
+        this.prioridade += 10;
       }
     }
+    //console.log(this.item.tags[0]
+    console.log(this.prioridade);
   }
-  */
 }
